@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-ts-sample-app",
-    "slug": "react-native-ts-sample-app",
+    "name": "react-native-ts-template",
+    "slug": "react-native-ts-template",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,6 +28,7 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "description": ""
+    "description": "https://github.com/da-okazaki/react-native-ts-template",
+    "githubUrl": "https://github.com/da-okazaki/react-native-ts-template"
   }
 }
