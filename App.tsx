@@ -1,14 +1,15 @@
-/* react native */
-import React from 'react';
+/* react */
+import React, { FC } from 'react';
+import { registerRootComponent } from 'expo';
+
 /* react native paper */
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 /* Navigation */
-import Navigation from './navigation';
-import { HomeScreen } from './screen';
+import Navigation from './src/navigations';
 
 /* Firebase */
-import firebase from "firebase/app";
-import { firebaseConfig } from "./firebase/config"
+import firebase from 'firebase/app';
+import { firebaseConfig } from './firebase/config';
 firebase.initializeApp(firebaseConfig);
 
 const theme = {
@@ -18,20 +19,13 @@ const theme = {
     primary: 'tomato',
     accent: 'yellow',
   },
-}
+};
 
-export default function App() {
-  return (
-    <Navigation  />
-  )
-}
-
-/**
-export default function App() {
+const App: FC = () => {
   return (
     <PaperProvider theme={theme}>
-      <Navigation  />;
+      <Navigation />
     </PaperProvider>
-  )
-}
- */
+  );
+};
+export default registerRootComponent(App);

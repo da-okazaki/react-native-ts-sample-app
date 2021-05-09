@@ -2,11 +2,11 @@
 import * as React from 'react';
 import { View, Alert } from 'react-native';
 /* styles */
-import { styles } from '../styles/global-styles';
+import { styles } from 'src/styles/global-styles';
 /* constants */
-import { BUTTON, ALERT } from '../constants/wordConstants';
+import { BUTTON, ALERT } from 'src/constants/wordConstants';
 /* components */
-import { Button } from '../components/index';
+import { Button } from 'src/components/index';
 
 const HomeScreen = ({ navigation }: any) => {
   const onPressAlertDisp = () => {
@@ -18,7 +18,10 @@ const HomeScreen = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
       <Button title={BUTTON.alert} onPress={onPressAlertDisp} />
-      <Button title="GO TO Second Screen" onPress={() => navigation.navigate('Second')} />
+      <Button
+        title='GO TO Second Screen'
+        onPress={() => navigation.navigate('Second')}
+      />
     </View>
   );
 };

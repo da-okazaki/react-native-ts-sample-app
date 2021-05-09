@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { View, Text } from 'react-native';
 /* styles */
-import { styles } from '../styles/global-styles';
+import { styles } from 'src/styles/global-styles';
 
 const SecondScreen = () => {
   return (
