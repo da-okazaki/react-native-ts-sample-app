@@ -1,15 +1,13 @@
 /* react */
 import React, { FC } from 'react';
 import { registerRootComponent } from 'expo';
-
+/* Navigation */
+import Navigation from './navigations';
 /* react native paper */
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-/* Navigation */
-import Navigation from './src/navigations';
-
 /* Firebase */
 import firebase from 'firebase/app';
-import { firebaseConfig } from './firebase/config';
+import { firebaseConfig } from '../firebase/config';
 firebase.initializeApp(firebaseConfig);
 
 const theme = {

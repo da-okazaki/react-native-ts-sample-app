@@ -6,6 +6,6 @@ interface Props {
   onPress: () => void;
 }
 const Button = ({ title, onPress }: Props) => {
-  return <PaperButton icon="camera" onPress={onPress}>{title}</PaperButton>;
+  return <PaperButton onPress={onPress}>{title}</PaperButton>;
 };
 export default Button;
